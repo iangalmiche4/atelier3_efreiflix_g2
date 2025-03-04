@@ -1,12 +1,15 @@
-import React from 'react';
-import Comments from './Comments';
-import './styles/comments.css';
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import Comments from "./Comments";
+import "./styles/comments.css";
 
 const App = () => {
   return (
-    <div className="netflix-app">
-      <Comments />
-    </div>
+    <BrowserRouter>
+      <div className="netflix-app">
+        <Comments />
+      </div>
+    </BrowserRouter>
   );
 };
 

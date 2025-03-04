@@ -43,6 +43,9 @@ module.exports = {
     new ModuleFederationPlugin({
       name: 'preview',
       filename: 'productPreview.js',
+      remotes: {
+        comments: 'comments@http://localhost:3025/Comments.js',
+      },
       exposes: {
         './productPreview': './src/productPreview',
       },

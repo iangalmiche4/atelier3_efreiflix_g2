@@ -44,7 +44,7 @@ module.exports = {
       name: 'userProfile',
       filename: 'userProfile.js',
       exposes: {
-        './userProfile': './src/userProfile',
+        './userProfile': './src/UserProfile',
       },
       shared: {
         react: {
